@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Pod
+metadata: 
+  name: greenpod
+  labels:
+    app: souravapp
+spec:
+  containers:
+    - name: nginx
+      image: achinta1/achinta-colors:green
+      ports:
+        - containerPort: 80
+      
